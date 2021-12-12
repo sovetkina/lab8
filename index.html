@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Лабораторная работа</title>
+	</head>
+	<body>
+		<a href="https://www.google.ru/" id="sitelink">https://www.google.ru/</a>
+    <script>
+        function hello(){
+            var a=prompt("Введите новый цвет фона (на английском)");
+            document.body.style.backgroundColor=a;
+            var b=prompt("Изменение ссылки. Введите полный адрес ссылки");
+            document.getElementById("sitelink").href=b;
+            document.getElementById("sitelink").innerHTML=b;
+        }
+        setTimeout(hello, 1000);
+	</script>
+	</body>
+</html>
